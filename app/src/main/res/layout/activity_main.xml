@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dev.touyou.tictactoe.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player"
+            android:id="@+id/playerText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textIsSelectable="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton1"
+                android:onClick="tapMark"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton2"
+                android:scaleType="fitCenter"
+                android:onClick="tapMark" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton3"
+                android:onClick="tapMark"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton4"
+                android:scaleType="fitCenter"
+                android:onClick="tapMark" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton5"
+                android:onClick="tapMark"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton6"
+                android:scaleType="fitCenter"
+                android:onClick="tapMark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton7"
+                android:onClick="tapMark"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton8"
+                android:onClick="tapMark"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:id="@+id/imageButton9"
+                android:scaleType="fitCenter"
+                android:onClick="tapMark" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:id="@+id/button"
+            android:onClick="reset" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/winnerText"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:background="#9d171717" />
+
+</RelativeLayout>
